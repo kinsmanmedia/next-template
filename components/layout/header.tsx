@@ -30,8 +30,8 @@ export default function Header() {
             <div className="space-x-4">
               <SignedOut>
                 {/* <SignInButton /> */}
-                <Link href="/sign-in" className="text-blue-500 hover:underline">Sign In</Link>
-                <Link href="/sign-up" className="text-blue-500 hover:underline">Sign Up</Link>
+                <Link href="/clerk/sign-in" className="text-blue-500 hover:underline">Sign In</Link>
+                <Link href="/clerk/sign-up" className="text-blue-500 hover:underline">Sign Up</Link>
               </SignedOut>
             </div>
           )}
