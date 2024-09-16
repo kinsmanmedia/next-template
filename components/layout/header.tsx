@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import {
   ClerkProvider,
   SignInButton,
@@ -30,8 +29,8 @@ export default function Header() {
             <div className="space-x-4">
               <SignedOut>
                 {/* <SignInButton /> */}
-                <Link href="/clerk/sign-in" className="text-blue-500 hover:underline">Sign In</Link>
-                <Link href="/clerk/sign-up" className="text-blue-500 hover:underline">Sign Up</Link>
+                <Link href="/packages/auth-clerk/sign-in" className="text-blue-500 hover:underline">Sign In</Link>
+                <Link href="/packages/auth-clerk/sign-up" className="text-blue-500 hover:underline">Sign Up</Link>
               </SignedOut>
             </div>
           )}
