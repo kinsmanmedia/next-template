@@ -8,14 +8,6 @@ export default function Header() {
         <Link href="/" className="text-2xl font-bold">
           Next Template
         </Link>
-        <nav>
-          <Button variant="ghost" asChild>
-            <Link href="/about">About</Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link href="/contact">Contact</Link>
-          </Button>
-        </nav>
       </div>
     </header>
   );
