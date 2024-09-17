@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-export default function Page() {
+export default async function Page() {
     return (
         <div className="container mx-auto px-4 py-8">
             <section className="py-12">
