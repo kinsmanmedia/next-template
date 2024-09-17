@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -47,6 +48,23 @@ export default function Home() {
                   <Input type="email" placeholder="Enter your email" required />
                   <Button type="submit" className="w-full">Subscribe</Button>
                 </form>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* New Stripe Checkout Section */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <Card>
+            <CardContent className="pt-6">
+              <div className="text-center">
+                <h2 className="text-3xl font-bold mb-4">Try Our Premium Service</h2>
+                <p className="mb-6">Experience the best with our premium offering.</p>
+                <Link href="/checkout">
+                  <Button>Go to Checkout</Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
