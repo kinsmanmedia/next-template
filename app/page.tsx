@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+// import { prisma } from '@/lib/prisma';
 
-export default function Home() {
+export default async function Home() {
+  // const users = await prisma.user.findMany();
+  // console.log(users);
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Banner */}
