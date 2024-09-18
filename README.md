@@ -1,4 +1,4 @@
-# Next Template
+# Next Template with Strapi
 
 ```bash
 npm run dev

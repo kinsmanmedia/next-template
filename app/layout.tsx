@@ -4,6 +4,7 @@ import './globals.css'
 import {
   ClerkProvider,
 } from '@clerk/nextjs'
+import Link from 'next/link';
 
 export default function RootLayout({
   children,
@@ -15,6 +16,13 @@ export default function RootLayout({
       <body>
         <ClerkProvider>
           <Header />
+          <header>
+            {/* ... existing header content ... */}
+            <nav>
+              <Link href="/">Home</Link>
+              <Link href="/blog">Blog</Link>
+            </nav>
+          </header>
           {children}
           <Footer />
         </ClerkProvider>

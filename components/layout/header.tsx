@@ -33,6 +33,7 @@ export default function Header() {
               </SignedOut>
             </div>
           )}
+          <Link href="/blog" className="text-blue-500 hover:underline">Blog</Link>
         </nav>
       </div>
     </header>
