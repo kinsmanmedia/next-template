@@ -9,9 +9,7 @@ import {
 import { auth } from '@clerk/nextjs/server'
 
 export default function Header() {
-
   const { userId }: { userId: string | null } = auth()
-
   return (
     <header className="bg-background border-b">
       <div className="container mx-auto px-8 py-4 flex justify-between items-center">
@@ -21,9 +19,10 @@ export default function Header() {
         <nav>
           {userId ? (
             <div className="flex items-center space-x-4">
-              <SignedIn>
+              {/* <SignedIn>
                 <UserButton afterSignOutUrl="/" />
-              </SignedIn>
+              </SignedIn> */}
+              <Link href="/dashboard/user" className="text-blue-500 hover:underline">Profile</Link>
             </div>
           ) : (
             <div className="space-x-4">
