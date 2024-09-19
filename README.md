@@ -2,35 +2,6 @@
 
 A custom Next.js template featuring TypeScript, React, Shadcn UI, Radix UI, Tailwind CSS, and more. This monorepo includes feature branches for authentication, payments, and database integrations.
 
-## Project Structure
-```lua
-.
-├── README.md
-├── app
-│   ├── dashboard
-│   │   ├── admin
-│   │   │   └── page.tsx
-│   │   ├── page.tsx
-│   │   └── user
-│   │       └── page.tsx
-│   ├── favicon.ico
-│   ├── globals.css
-│   ├── layout.tsx
-│   ├── lib
-│   │   └── db.ts
-│   ├── packages
-│   │   └── auth-clerk
-│   └── page.tsx
-├── components
-├── lib
-├── middleware.ts
-├── prisma
-│   └── schema.prisma
-├── public
-├── tailwind.config.ts
-└── tsconfig.json
-```
-
 ## Features
 - **UI**: Tailwind CSS, Shadcn UI, Radix UI
 - **Authentication**: Clerk
